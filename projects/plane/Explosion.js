@@ -43,11 +43,6 @@ uniform sampler2D u_tex;
 
 varying float noise;
 
-//	<https://www.shadertoy.com/view/4dS3Wd>
-//	By Morgan McGuire @morgan3d, http://graphicscodex.com
-
-//https://www.clicktorelease.com/blog/vertex-displacement-noise-3d-webgl-glsl-three-js/
-
 float random( vec3 scale, float seed ){
   return fract( sin( dot( gl_FragCoord.xyz + seed, scale ) ) * 43758.5453 + seed ) ;
 }
